@@ -9,10 +9,28 @@
         <title>Hello World</title>
     </head>
     <body>
+
+    <div id="back" class="layer">
+
+    </div>
+
+
+
         <script type="text/javascript" src="cordova-2.2.0.js"></script>
+        <script src="js/lib/jquery.js"></script>
+
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+            var speed = 0;
+            var $back = document.querySelector("#back");
+            var xPos = 0;
+            setInterval(function(){
+                xPos -= 1;
+                $back.style.backgroundPosition = xPos + "px 0px";
+
+            },10/1000);
         </script>
+
     </body>
 </html>
