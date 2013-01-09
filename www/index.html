@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -10,24 +10,24 @@
     </head>
     <body>
 
-    <div id="back" class="layer">
-    </div>
-    <div id="forward">
-        hello
-    </div>
 
-    <canvas id="base_ball"></canvas>
-
-
+		<canvas id="test" width="320" height="480" ></canvas>
 
         <script type="text/javascript" src="cordova-2.2.0.js"></script>
-        <script src="js/lib/jquery.js"></script>
+        <script src="http://code.createjs.com/easeljs-0.5.0.min.js"></script>
 
-        <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/lib/jquery.js"></script>
+
+        <script src="js/lib/easeljs-0.5.0.min.js"></script>
+
+
+        <script src='js/plugins/vector2d.js'></script>
+        <script src='js/models/ball.js'></script>
         <script type="text/javascript" src="js/plugins/ball_sprite.js"></script>
-
-
         <script type="text/javascript" src="js/game.js"></script>
+        <script src="js/cannon.js"></script>
+        <script src="js/lib/helper.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
 
 
 
@@ -37,11 +37,16 @@
             var speed = 0;
             var $back = document.querySelector("#back");
             var xPos = 0;
-            setInterval(function(){
-                xPos -= 1;
-                $back.style.backgroundPosition = xPos + "px 0px";
 
-            },10/1000);
+           // setInterval(function(){
+           //     xPos -= 1;
+            //    $back.style.backgroundPosition = xPos + "px 0px";
+
+           // },10/1000);
+
+
+
+
         </script>
 
     </body>

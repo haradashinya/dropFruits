@@ -2,13 +2,25 @@ body {
   padding: 0px;
   margin: 0px; }
 
+#test {
+  margin: 0px;
+  border: 1px solid; }
+
 .layer {
   position: absolute;
   width: 480px;
   height: 256px; }
 
 #back {
-  background: transparent url(../img/sky.png); }
+  opacity: 0.1;
+  z-index: -2; }
 
 #front {
   background: transparent url(back3.png); }
+
+#forward {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  width: 300px;
+  background-color: red; }
