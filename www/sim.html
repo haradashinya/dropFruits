@@ -158,6 +158,7 @@ window.onload = function() {
             vec.scale(25);   // 25単位に拡大する
             // 新しい弾丸を生成して、gameObjectsに追加する
             gameObjects.push(cannonBall(that.x, that.y, vec));
+            console.log({"thatx":that.x,"thaty":that.y,vec:vec});
         };
 
         // Canvas上のマウス座標を保存する

@@ -10,7 +10,6 @@ var Cannon = function(x,y,canvas){
     removeMe: false,
     move:function(){
       angle = Math.atan2(my - that.y,mx - that.x);
-      console.log(that.x);
     },
     draw:function(){
     }

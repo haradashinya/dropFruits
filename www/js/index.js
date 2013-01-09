@@ -84,17 +84,27 @@ var app = {
       };
       var game = window.Game();
 
+
       stage.onMouseDown = function(e){
-        var ball =  new createjs.Shape();
+        var ball =  window.Ball();
         // circleの位置を始点にする。
         ball.x = 50;
         ball.y = 420;
-
+        ball.rotate = function(angle){
+          var vx = ball.x;
+          var vy = ball.y;
+          var cosVal = Math.cos(angle);
+          var sinVal = Math.sin(angle);
+          ball.vx = vx *cosVal - vy * sinVal;
+          ball.vy = vx * sinVal + vy * cosVal;
+        },
         ball.move = function(){
-          console.log(mx);
           var angle = Math.atan2(window.my - ball.y,window.mx - ball.x);
-          console.log(angle);
+          ball.rotate(angle);
+          ball.x += ball.vx;
+          ball.y += ball.vy;
         };
+
 
 
         ball.type = "dynamic" ;
@@ -116,7 +126,6 @@ var app = {
         for(var i= 0,l = game.objects.length; i < l;i++){
           //obj is instance of Circle;
           var obj = game.objects[i];
-          obj.x += 1;
           obj.move();
         }
 
