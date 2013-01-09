@@ -101,8 +101,9 @@ var app = {
         ball.move = function(){
           var angle = Math.atan2(window.my - ball.y,window.mx - ball.x);
           ball.rotate(angle);
-          ball.x += ball.vx;
-          ball.y += ball.vy;
+          // TODO:vx,vy を正規化する
+          ball.x += ball.vx/100;
+          ball.y += ball.vy/100
         };
 
 

@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357726001853" ignored="false" />
     <file path="/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357636859616" ignored="false" />
-    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357739892272" ignored="false" />
+    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357740136975" ignored="false" />
     <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357725977549" ignored="false" />
     <file path="/game.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357734125918" ignored="false" />
     <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357739763207" ignored="false" />
@@ -109,10 +109,10 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="0" selection-start="3202" selection-end="3202" vertical-scroll-proportion="0.41643837">
+            <state line="103" column="17" selection-start="3365" selection-end="3365" vertical-scroll-proportion="0.50410956">
               <folding>
-                <marker date="1357739918000" expanded="true" signature="4048:4067" placeholder="{...}" />
-                <marker date="1357739918000" expanded="true" signature="4048:4064" placeholder="{...}" />
+                <marker date="1357740487000" expanded="true" signature="4086:4105" placeholder="{...}" />
+                <marker date="1357740487000" expanded="true" signature="4086:4102" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -694,10 +694,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="3202" selection-end="3202" vertical-scroll-proportion="0.41643837">
+        <state line="103" column="17" selection-start="3365" selection-end="3365" vertical-scroll-proportion="0.50410956">
           <folding>
-            <marker date="1357739918000" expanded="true" signature="4048:4067" placeholder="{...}" />
-            <marker date="1357739918000" expanded="true" signature="4048:4064" placeholder="{...}" />
+            <marker date="1357740487000" expanded="true" signature="4086:4105" placeholder="{...}" />
+            <marker date="1357740487000" expanded="true" signature="4086:4102" placeholder="{...}" />
           </folding>
         </state>
       </provider>
