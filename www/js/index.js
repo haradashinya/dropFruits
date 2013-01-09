@@ -15,7 +15,6 @@
  //* KIND, either express or implied.  See the License for the
  //* specific language governing permissions and limitations
  //* under the License.
- 
 var app = {
     // Application Constructor
     initialize: function() {
@@ -54,12 +53,14 @@ var app = {
       stage = new createjs.Stage(canvas);
       createjs.Touch.enable(stage);
       stage.enableMouseOver(10);
-
       var circle = new createjs.Shape();
-      var t = new createjs.Text();
-      t.text = "hello";
-      t.x = 30;
-      t.y = 220;
+
+      var rec = new createjs.Shape( );
+      rec.graphics.beginFill("#999")
+        .drawRect(50,420,100,30);
+      stage.addChild(rec);
+
+
       circle.graphics.beginFill("#FF0000");
       circle.graphics.setStrokeStyle(3);
       circle.graphics.beginStroke("#0000FF");
@@ -73,12 +74,22 @@ var app = {
 
       // position the text on screen, relative to the stage coordinates:
       // fire tick method
-      createjs.Ticker.setFPS(10);
+      createjs.Ticker.setFPS(30);
       createjs.Ticker.useRAF = true;
       createjs.Ticker.addListener(stage);
 
       stage.onMouseMove = function(e){
         console.log(e);
+      };
+      var game = window.Game();
+
+      stage.onMouseDown = function(e){
+        var ball =  new createjs.Shape();
+        ball.graphics.beginFill("#ff0000");
+        ball.graphics.drawCircle(10,10,10);
+        ball.graphics.endFill();
+        game.objects.push(ball);
+        stage.addChild(ball);
       };
 
 
@@ -89,6 +100,14 @@ var app = {
 
       var cnt =0;
       stage.tick = function(){
+        for(var i= 0,l = game.objects.length; i < l;i++){
+          //obj is instance of Circle;
+          var obj = game.objects[i];
+          obj.x += 1;
+          obj.rotation += 10;
+          console.log(obj.rotation);
+        }
+
 
 
         stage.update();
