@@ -79,12 +79,25 @@ var app = {
       createjs.Ticker.addListener(stage);
 
       stage.onMouseMove = function(e){
-        console.log(e);
+        window.mx = e.stageX;
+        window.my = e.stageY;
       };
       var game = window.Game();
 
       stage.onMouseDown = function(e){
         var ball =  new createjs.Shape();
+        // circleの位置を始点にする。
+        ball.x = 50;
+        ball.y = 420;
+
+        ball.move = function(){
+          console.log(mx);
+          var angle = Math.atan2(window.my - ball.y,window.mx - ball.x);
+          console.log(angle);
+        };
+
+
+        ball.type = "dynamic" ;
         ball.graphics.beginFill("#ff0000");
         ball.graphics.drawCircle(10,10,10);
         ball.graphics.endFill();
@@ -104,9 +117,9 @@ var app = {
           //obj is instance of Circle;
           var obj = game.objects[i];
           obj.x += 1;
-          obj.rotation += 10;
-          console.log(obj.rotation);
+          obj.move();
         }
+
 
 
 

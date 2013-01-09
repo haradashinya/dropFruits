@@ -10,6 +10,7 @@ var Cannon = function(x,y,canvas){
     removeMe: false,
     move:function(){
       angle = Math.atan2(my - that.y,mx - that.x);
+      console.log(that.x);
     },
     draw:function(){
     }
@@ -21,7 +22,6 @@ var Cannon = function(x,y,canvas){
     vec.scale(25);
   };
   canvas.onmousemove = function(e){
-    console.log("move");
     var bb = canvas.getBoundingClientRect();
     mx = (event.clientX - bb.left);
     my = (event.clientY - bb.top);

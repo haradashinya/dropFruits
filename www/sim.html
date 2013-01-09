@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" >
+window.onload = function() {
+    var gameObjects = [],
+            canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d');
+
+    var vector2d = function(x, y) {
+
+        var vec = {
+            // ベクトルの x, y成分を vx, vy	に格納する
+            vx: x,
+            vy: y,
+
+            // scale() メソッドはベクトルを拡大・縮小する
+            scale: function(scale) {
+                vec.vx *= scale;
+                vec.vy *= scale;
+            },
+
+            // add() メソッドはベクトルを足し算する
+            add: function(vec2) {
+                vec.vx += vec2.vx;
+                vec.vy += vec2.vy;
+            },
+
+            // sub() メソッドはベクトルを引き算する
+            sub: function(vec2) {
+                vec.vx -= vec2.vx;
+                vec.vy -= vec2.vy;
+            },
+
+            // negate() メソッドはベクトルを逆向きにする
+            negate: function() {
+                vec.vx = -vec.vx;
+                vec.vy = -vec.vy;
+            },
+
+            // length() メソッドばピタゴラスの定理を用いてベクトルの長さを返す
+            length: function() {
+                return Math.sqrt(vec.vx * vec.vx + vec.vy * vec.vy);
+            },
+
+            // ベクトルの長さの2乗を返す。
+            // ベクトルの長さを比較するときに、lengthの代わりに使えば高速
+            lengthSquared: function() {
+                return vec.vx * vec.vx + vec.vy * vec.vy;
+            },
+
+            // normalize() メソッドは、ベクトルを同じ方向を向き、単位長の
+            // ベクトルにする
+            normalize: function() {
+                var len = Math.sqrt(vec.vx * vec.vx + vec.vy * vec.vy);
+                if (len) {
+                    vec.vx /= len;
+                    vec.vy /= len;
+                }
+                // 長さを計算したので、返り値にして使えるようにする。
+                return len;
+            },
+
+            // ラジアン単位で指定した角度だけベクトルを回転する
+            rotate: function(angle) {
+                var vx = vec.vx,
+                        vy = vec.vy,
+                        cosVal = Math.cos(angle),
+                        sinVal = Math.sin(angle);
+                vec.vx = vx * cosVal - vy * sinVal;
+                vec.vy = vx * sinVal + vy * cosVal;
+            },
+
+            // toString()は、ベクトルを文字列として表示するユーティリティ関数。
+            // デバッグ時に有用
+            toString: function() {
+                return '(' + vec.vx.toFixed(3) + ',' + vec.vy.toFixed(3) + ')';
+            }
+        };
+        return vec;
+    };
+
+    var cannonBall = function(x, y, vector) {
+        var gravity = 0,
+                that = {
+                    x: x,                       // 初期 x座標
+                    y: y,                       // 初期 y座標
+                    removeMe: false,            // 削除フラグ
+
+                    // move() メソッドは座標と速度を更新し、
+                    // 弾丸が地面に着いたかどうか判定する
+                    move: function() {
+                        vector.vy += gravity;   // 垂直速度として重力成分を足す
+                        gravity += 0.1;         // 重力成分を増やす
+                        that.x += vector.vx;    // 速度を座標に足し合わせる
+                        that.y += vector.vy;
+
+                        // 弾丸が地面についたら、削除フラグを立てる
+                        if (that.y > canvas.height - 150) {
+                            that.removeMe = true;
+                        }
+                    },
+
+                    // draw()メソッドは、弾丸の座標を中心に塗り潰し円を描画する。
+                    draw: function() {
+                        ctx.beginPath();
+                        ctx.arc(that.x, that.y, 5, 0, Math.PI * 2, true);
+                        ctx.fill();
+                        ctx.closePath();
+                    }
+                };
+        return that;
+    };
+
+    var cannon = function(x, y) {
+        var mx = 0,
+                my = 0,
+                angle = 0,
+                that = {
+                    x: x,
+                    y: y,
+                    angle: 0,
+                    removeMe: false,
+
+                    // move()メソッドは大砲をマウスポインタに向けるだけ。
+                    move: function() {
+                        // マウスポインタへの角度を計算する
+                        angle = Math.atan2(my - that.y, mx - that.x);
+
+                    },
+
+                    draw: function() {
+                        ctx.save();
+                        ctx.lineWidth = 2;
+                        // 原点は銃身の底辺の中心点とする
+                        ctx.translate(that.x, that.y);
+
+                        // move()メソッドで計算した角度を使って回転
+                        ctx.rotate(angle);
+                        // 長方形で「銃身」を描く
+                        ctx.strokeRect(0, -5, 50, 10);
+
+                        // 大砲の下に「車輪」を描く
+                        ctx.moveTo(0, 0);
+                        ctx.beginPath();
+                        ctx.arc(0, 0, 15, 0, Math.PI * 2, true);
+                        ctx.fill();
+                        ctx.closePath();
+                        ctx.restore();
+                    }
+                };
+
+        // マウスがクリックされたら、弾丸を発射する
+        canvas.onmousedown = function(event) {
+            // 大砲の座標から、マウスの方向を向くベクトルを生成する
+            var vec = vector2d(mx - that.x, my - that.y);
+            vec.normalize(); // 単位長にする
+            vec.scale(25);   // 25単位に拡大する
+            // 新しい弾丸を生成して、gameObjectsに追加する
+            gameObjects.push(cannonBall(that.x, that.y, vec));
+        };
+
+        // Canvas上のマウス座標を保存する
+        canvas.onmousemove = function(event) {
+            var bb = canvas.getBoundingClientRect();
+            mx = (event.clientX - bb.left);
+            my = (event.clientY - bb.top);
+//            console.log({x: mx,y:my});
+        };
+
+        return that;
+    };
+
+    // Canvasの中心を水平線として青い空と草原を描く。
+    // 動物体の残像効果のために、半透明で描画する。
+    var drawSkyAndGrass = function() {
+        ctx.save();
+        // 透明度を設定する
+        ctx.globalAlpha = 0.4;
+        // CanvasGradientoオブジェクトを生成してlinGradで参照する。
+        // グラデーションの線分は、キャンバスの上端から下端までとする。
+        var linGrad = ctx.createLinearGradient(0, 0, 0, canvas.height);
+        // 上端は青い空の色から開始
+        linGrad.addColorStop(0, '#00BFFF');
+        // 中央にいくほどだんだん白くなる
+        linGrad.addColorStop(0.5, 'white');
+        // 草原の上端は緑にする
+        linGrad.addColorStop(0.5, '#55dd00');
+        // 下端にいくほどだんだん白くする
+        linGrad.addColorStop(1, 'white');
+        // CanvasGradientオブジェクトを塗り潰しスタイルにする
+        ctx.fillStyle = linGrad;
+        // 最後にCanvasと同じサイズの矩形を塗り潰す
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.restore();
+    };
+
+    // 大砲をゲームオブジェクトのリストに追加する
+    gameObjects.push(cannon(50, canvas.height-150));
+
+    // すべての移動と描画を処理するメインループ
+    setInterval( function() {
+        drawSkyAndGrass();
+        gameObjectsFresh = [];
+        for (var i = 0; i < gameObjects.length; i++) {
+            gameObjects[i].move();
+            gameObjects[i].draw();
+            if (gameObjects[i].removeMe === false) {
+                gameObjectsFresh.push(gameObjects[i]);
+            }
+        }
+        gameObjects = gameObjectsFresh;
+
+    },30);
+};
+</script>
+
+</head>
+<body>
+<canvas id="canvas" width="640" height="480" style="border:1px solid">
+    HTML5 Canvasが使えません！
+</canvas>
+</body>
+</html>
