@@ -28,20 +28,6 @@ var app = {
         app.receivedEvent('deviceready');
     },
     run:function(){
-//      setInterval(function(){
-//        window.clearPersistence(canvas);
-//        gameObjectsFresh = [];
-//        for(var i = 0, len = gameObjects.length; i < len;i++){
-//          var obj = gameObjects[i];
-//          obj.move();
-//          obj.draw();
-//          if (obj.removeMe == false){
-//            gameObjectsFresh.push(obj);
-//          }
-//        }
-//        gameObjects = gameObjectsFresh;
-//
-//      },30);
 
 
 
@@ -56,21 +42,34 @@ var app = {
       var circle = new createjs.Shape();
 
       var rec = new createjs.Shape( );
-      rec.graphics.beginFill("#999")
-        .drawRect(50,420,100,30);
-      stage.addChild(rec);
+      rec.graphics.beginFill("red");
+      rec.graphics.alpha = 0.1;
+      rec.graphics.drawRoundRect(20,430,30,30,15);
+
+      var eye = new createjs.Shape();
+      eye.graphics.beginFill("black");
+      eye.graphics.setStrokeStyle(7);
+      eye.graphics.beginStroke("white");
+      eye.graphics.drawCircle(10,430,7);
+      rec.alpha = 1;
 
 
-      circle.graphics.beginFill("#FF0000");
-      circle.graphics.setStrokeStyle(3);
-      circle.graphics.beginStroke("#0000FF");
+      circle.graphics.beginFill("#ffcccc");
+//      circle.graphics.setStrokeStyle(10);
+//      circle.graphics.beginStroke("#ccc");
       //円を描画
       // circleの中心点 50,420
       // drawCircle(originX,originY,radius);
-      circle.graphics.drawCircle(50 + 10,420,50);
+      circle.graphics.drawCircle(0,455,50);
       circle.graphics.endFill();
       //shapeを表示
       stage.addChild(circle);
+      stage.addChild(rec);
+      stage.addChild(eye);
+
+
+
+
 
       // position the text on screen, relative to the stage coordinates:
       // fire tick method
@@ -79,36 +78,18 @@ var app = {
       createjs.Ticker.addListener(stage);
 
       stage.onMouseMove = function(e){
-        window.mx = e.stageX;
-        window.my = e.stageY;
+
+
       };
       var game = window.Game();
 
-
       stage.onMouseDown = function(e){
+        window.mx = e.stageX;
+        window.my = e.stageY;
         var ball =  window.Ball();
         // circleの位置を始点にする。
-        ball.x = 50;
-        ball.y = 420;
-        ball.rotate = function(angle){
-          var vx = ball.x;
-          var vy = ball.y;
-          var cosVal = Math.cos(angle);
-          var sinVal = Math.sin(angle);
-          ball.vx = vx *cosVal - vy * sinVal;
-          ball.vy = vx * sinVal + vy * cosVal;
-        },
-        ball.move = function(){
-          var angle = Math.atan2(window.my - ball.y,window.mx - ball.x);
-          ball.rotate(angle);
-          // TODO:vx,vy を正規化する
-          ball.x += ball.vx/100;
-          ball.y += ball.vy/100
-        };
-
-
-
-
+        ball.x = 25;
+        ball.y = 455;
         game.objects.push(ball);
         stage.addChild(ball);
       };
@@ -118,13 +99,18 @@ var app = {
       // call update on the stage to make it render the current display list to the canvas:
       // setup stage
       stage.update();
-
       var cnt =0;
       stage.tick = function(){
         for(var i= 0,l = game.objects.length; i < l;i++){
           //obj is instance of Circle;
           var obj = game.objects[i];
-          obj.move();
+          if (obj.removeMe === true){
+            game.objects.splice(i,1);
+            stage.removeChild(obj);
+
+            return ;
+          }
+          obj.move(eye);
         }
 
 

@@ -126,6 +126,7 @@ window.onload = function() {
                     move: function() {
                         // マウスポインタへの角度を計算する
                         angle = Math.atan2(my - that.y, mx - that.x);
+                        console.log(angle);
 
                     },
 
@@ -156,9 +157,9 @@ window.onload = function() {
             var vec = vector2d(mx - that.x, my - that.y);
             vec.normalize(); // 単位長にする
             vec.scale(25);   // 25単位に拡大する
+
             // 新しい弾丸を生成して、gameObjectsに追加する
             gameObjects.push(cannonBall(that.x, that.y, vec));
-            console.log({"thatx":that.x,"thaty":that.y,vec:vec});
         };
 
         // Canvas上のマウス座標を保存する
