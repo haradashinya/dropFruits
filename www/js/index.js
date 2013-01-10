@@ -35,6 +35,7 @@ var app = {
     },
     receivedEvent: function(id) {
       var canvas = document.getElementById("test");
+      canvas.height = window.innerHeight;
       var ctx = canvas.getContext("2d");
       stage = new createjs.Stage(canvas);
       createjs.Touch.enable(stage);
@@ -44,13 +45,12 @@ var app = {
       var rec = new createjs.Shape( );
       rec.graphics.beginFill("red");
       rec.graphics.alpha = 0.1;
-      rec.graphics.drawRoundRect(20,430,30,30,15);
-
+      rec.graphics.drawRoundRect(20,canvas.height - 50,30,30,15);
       var eye = new createjs.Shape();
       eye.graphics.beginFill("black");
       eye.graphics.setStrokeStyle(7);
       eye.graphics.beginStroke("white");
-      eye.graphics.drawCircle(10,430,7);
+      eye.graphics.drawCircle(10,canvas.height - 50,7);
       rec.alpha = 1;
 
 
@@ -60,7 +60,7 @@ var app = {
       //円を描画
       // circleの中心点 50,420
       // drawCircle(originX,originY,radius);
-      circle.graphics.drawCircle(0,455,50);
+      circle.graphics.drawCircle(0,canvas.height - 25,50);
       circle.graphics.endFill();
       //shapeを表示
       stage.addChild(circle);
@@ -89,7 +89,7 @@ var app = {
         var ball =  window.Ball();
         // circleの位置を始点にする。
         ball.x = 25;
-        ball.y = 455;
+        ball.y = canvas.height - 25;
         game.objects.push(ball);
         stage.addChild(ball);
       };
