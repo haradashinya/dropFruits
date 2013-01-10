@@ -14,7 +14,10 @@ window.Ball = function(){
   that.rotate = function(){
   };
 
-  console.log(that);
+  that.type = "dynamic" ;
+  that.graphics.beginFill("#ff0000");
+  that.graphics.drawCircle(10,10,10);
+  that.graphics.endFill();
   return that;
 };
 

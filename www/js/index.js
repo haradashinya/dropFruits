@@ -108,10 +108,7 @@ var app = {
 
 
 
-        ball.type = "dynamic" ;
-        ball.graphics.beginFill("#ff0000");
-        ball.graphics.drawCircle(10,10,10);
-        ball.graphics.endFill();
+
         game.objects.push(ball);
         stage.addChild(ball);
       };
