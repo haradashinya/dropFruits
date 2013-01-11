@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357893237865" ignored="false" />
     <file path="/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357636859616" ignored="false" />
-    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357897598762" ignored="false" />
+    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357898802565" ignored="false" />
     <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357725977549" ignored="false" />
     <file path="/game.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357734125918" ignored="false" />
     <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357896971202" ignored="false" />
@@ -19,7 +19,8 @@
     <file path="/rectangle.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357873663654" ignored="false" />
     <file path="/sand.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357892531962" ignored="false" />
     <file path="/rocket.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357891574023" ignored="false" />
-    <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357893673070" ignored="false" />
+    <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357898407064" ignored="false" />
+    <file path="/manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357898741176" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <file leaf-file-name="enemy.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/models/enemy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="2" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+            <state line="19" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +96,7 @@
       <file leaf-file-name="ball.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="4" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+            <state line="25" column="25" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,7 +105,16 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="35" selection-start="3865" selection-end="3865" vertical-scroll-proportion="0.19726028">
+            <state line="82" column="27" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.569863">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/www/js/lib/helper.js" />
         <option value="$PROJECT_DIR$/www/scss/layout.scss" />
         <option value="$PROJECT_DIR$/www/js/game.js" />
         <option value="$PROJECT_DIR$/www/js/cannon.js" />
@@ -133,8 +142,9 @@
         <option value="$PROJECT_DIR$/www/js/rocket.js" />
         <option value="$PROJECT_DIR$/www/js/sand.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/js/models/enemy.js" />
         <option value="$PROJECT_DIR$/www/js/models/ball.js" />
+        <option value="$PROJECT_DIR$/www/js/models/enemy.js" />
+        <option value="$PROJECT_DIR$/www/js/lib/manager.js" />
         <option value="$PROJECT_DIR$/www/js/index.js" />
       </list>
     </option>
@@ -263,6 +273,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropFruits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dropFruits" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -537,13 +569,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/js/lib/easeljs-0.5.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="14" selection-start="119" selection-end="119" vertical-scroll-proportion="0.17534247" />
@@ -622,21 +647,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/models/enemy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+        <state line="19" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="4" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+        <state line="25" column="25" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="35" selection-start="3865" selection-end="3865" vertical-scroll-proportion="0.19726028">
+        <state line="82" column="27" selection-start="2693" selection-end="2693" vertical-scroll-proportion="0.569863">
           <folding />
         </state>
       </provider>

@@ -12,5 +12,11 @@ window.Enemy = function(x,y){
   // vx,vyを3倍する。
   // scaleで玉の勢いを変更する
   that.scale(40);
+  that.move = function(){
+    that.vx -= 1;
+    // 正規化して、力を一定にする。
+    that.normalize();
+    that.x += that.vx;
+  };
   return that;
 };

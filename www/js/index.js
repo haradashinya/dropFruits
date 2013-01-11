@@ -56,11 +56,17 @@ var app = {
 
       window.enemies = [];
 //      var enemy = Enemy(100,30);
-      for(var i = 0;i < 5;++i){
-        var enemy = Enemy(70 + 70*i,30);
-        enemies.push(enemy);
-        stage.addChild(enemy);
-      }
+
+
+      var addEnemy = function(){
+        for(var i = 0;i < 5;++i){
+          var enemy = Enemy(canvas.width + 30 + 80*i,30);
+          enemies.push(enemy);
+          stage.addChild(enemy);
+        }
+      };
+      addEnemy();
+
 
 
 
@@ -77,7 +83,6 @@ var app = {
       stage.addChild(circle);
       stage.addChild(rec);
       stage.addChild(eye);
-      stage.addChild(enemy);
 
 
 
@@ -122,6 +127,13 @@ var app = {
       stage.update();
       var cnt =0;
       stage.tick = function(){
+        enemies.forEach(function(enemy){
+          enemy.move();
+        });
+
+
+
+
         for(var i= 0,l = game.objects.length; i < l;i++){
           //obj is instance of Ball;
           var obj = game.objects[i];
@@ -132,19 +144,16 @@ var app = {
           }
           obj.move(eye);
 
-
           if (enemies.length ===0) continue;
+          //ひとつのボールに対して、現在存在しているenemie全てに対して、どれかひとつ当たれば、そいつを消す。
+          // あと、enemiyそれぞれを動かす。
           for  (var i2 = 0 ,l2 = enemies.length; i2< l2;i2++){
             var enemy = enemies[i2];
             if (isCollid(obj,enemy)){
               enemies.splice(i2,1);
               stage.removeChild(enemy);
-
             };
           }
-
-
-
         }
 
 
