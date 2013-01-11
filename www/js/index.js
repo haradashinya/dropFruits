@@ -55,6 +55,12 @@ var app = {
       rec.alpha = 1;
 
 
+      var enemy = Enemy(100,30);
+      console.log(enemy);
+
+
+
+
       circle.graphics.beginFill("#ffcccc");
 //      circle.graphics.setStrokeStyle(10);
 //      circle.graphics.beginStroke("#ccc");
@@ -67,6 +73,7 @@ var app = {
       stage.addChild(circle);
       stage.addChild(rec);
       stage.addChild(eye);
+      stage.addChild(enemy);
 
 
 

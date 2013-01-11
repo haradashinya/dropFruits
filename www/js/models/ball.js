@@ -9,8 +9,6 @@
  */
 
 window.Ball = function(x,y){
-  console.log(x);
-
   var canvas = document.querySelector("#test");
   var gravity = 0;
   var that = Object.create(new createjs.Shape());
@@ -46,7 +44,7 @@ window.Ball = function(x,y){
   that.normalize();
   // vx,vyを3倍する。
   // scaleで玉の勢いを変更する
-  that.scale(30);
+  that.scale(40);
   return that;
 };
 
