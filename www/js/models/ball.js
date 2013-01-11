@@ -9,12 +9,14 @@
  */
 
 window.Ball = function(x,y){
+  console.log(x);
 
   var canvas = document.querySelector("#test");
   var gravity = 0;
   var that = Object.create(new createjs.Shape());
-//  that.x = x;
-//  that.y = y;
+  window.Vec.apply(that,[0,0]);
+  that.x = x;
+  that.y = y;
   that.removeMe = false;
   that.type = "dynamic" ;
   that.graphics.beginFill("#ff0000");
@@ -26,52 +28,25 @@ window.Ball = function(x,y){
     return Math.sqrt(that.vx * that.vx + that.vy * that.vy);
   };
 
-  var scale = function(scale){
-    that.vx *= scale;
-    that.vy *= scale;
-  };
-
-  var normalize = function(){
-    var len = length();
-    if (len){
-      that.vx = that.vx / len;
-      that.vy =  that.vy / len;
-    }
-    return len;
-  };
-
-  var rotate = function(angle){
-    var vx = that.vx;
-    var vy = that.vy;
-    var cosVal = Math.cos(angle);
-    var sinVal = Math.sin(angle);
-    that.vx =   (vx * cosVal - vy * sinVal);
-    that.vy = vx * sinVal + vy * cosVal ;
-  };
-
-
   that.move = function(){
-    var angle = Math.atan2(window.my - that.y,window.mx - that.x);
-    that.vy += gravity;
-    gravity -= 0.1;
+    that.angle = Math.atan2(window.my - that.y,window.mx - that.x);
+    console.log(that.angle);
+    gravity += 0.1;
     that.x += that.vx;
-    that.y -= that.vy;
+    that.vy += gravity;
+    that.y += that.vy;
     if (that.y > canvas.height){
       that.removeMe = true;
-      console.log('removeMe');
     }
   };
 
   that.vx = window.mx - that.x;
   that.vy = window.my - that.y;
   // vx,vy の値を正規化する。
-  normalize();
-
+  that.normalize();
   // vx,vyを3倍する。
-  scale(30);
-
-  var angle =  Math.atan2(window.my - that.y,window.mx - that.x);
+  // scaleで玉の勢いを変更する
+  that.scale(30);
   return that;
 };
 
-var b= window.Ball();

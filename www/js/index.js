@@ -46,6 +46,7 @@ var app = {
       rec.graphics.beginFill("red");
       rec.graphics.alpha = 0.1;
       rec.graphics.drawRoundRect(20,canvas.height - 50,30,30,15);
+      window.Vec.apply(rec,[rec.x,rec.y]);
       var eye = new createjs.Shape();
       eye.graphics.beginFill("black");
       eye.graphics.setStrokeStyle(7);
@@ -77,9 +78,8 @@ var app = {
       createjs.Ticker.useRAF = true;
       createjs.Ticker.addListener(stage);
 
+
       stage.onMouseMove = function(e){
-
-
       };
       var game = window.Game();
 
@@ -87,9 +87,6 @@ var app = {
         window.mx = e.stageX;
         window.my = e.stageY;
         var ball =  window.Ball(25,canvas.height -25);
-        // circleの位置を始点にする。
-        ball.x = 25;
-        ball.y = canvas.height - 25;
         game.objects.push(ball);
         stage.addChild(ball);
       };
@@ -111,6 +108,8 @@ var app = {
             return ;
           }
           obj.move(eye);
+          eye.rotation = obj.angle/obj.length();
+
         }
 
 
