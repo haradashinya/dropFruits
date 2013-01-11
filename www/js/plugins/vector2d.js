@@ -64,3 +64,26 @@ window.Vector2d = function(x,y){
   return vec;
 
 };
+
+
+// for prototype inheritance.
+window.Vec = function(x,y){
+  this.vx = x;
+  this.vy = y;
+  this.length = function(){
+    return Math.sqrt(this.vx * this.vx + this.vy * this.vy);
+  };
+  this.normalize = function(){
+    var len = this.length();
+    if (len){
+      this.vx /= len;
+      this.vy /= len;
+    }
+    return len;
+  };
+  return this;
+};
+
+
+
+

@@ -9,13 +9,15 @@
     <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357798242636" ignored="false" />
     <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357725977549" ignored="false" />
     <file path="/game.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357734125918" ignored="false" />
-    <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357797456786" ignored="false" />
-    <file path="/vector2d.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357711631308" ignored="false" />
-    <file path="/sand.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357717072099" ignored="false" />
+    <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357798900290" ignored="false" />
+    <file path="/vector2d.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357873513209" ignored="false" />
+    <file path="/sand.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357870601475" ignored="false" />
     <file path="/cannon.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357797385226" ignored="false" />
     <file path="/helper.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357723105641" ignored="false" />
     <file path="/a.dummy" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357724835251" ignored="false" />
-    <file path="/sim.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357792498693" ignored="false" />
+    <file path="/sim.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357867991694" ignored="false" />
+    <file path="/rectangle.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357873663654" ignored="false" />
+    <file path="/sand.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357873986299" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +36,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -69,7 +72,6 @@
       </breakpoint>
     </breakpoint_any>
     <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -82,34 +84,34 @@
       <file leaf-file-name="vector2d.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/plugins/vector2d.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
+            <state line="69" column="26" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
+      <file leaf-file-name="rectangle.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/models/rectangle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="-16.16">
+            <state line="8" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ball.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
+      <file leaf-file-name="sand.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/sand.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+            <state line="37" column="14" selection-start="792" selection-end="792" vertical-scroll-proportion="0.75342464">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="33" selection-start="2902" selection-end="2902" vertical-scroll-proportion="0.3068493">
+            <state line="99" column="18" selection-start="3119" selection-end="3119" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,7 +120,7 @@
       <file leaf-file-name="sim.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/sim.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="-3.84">
+            <state line="139" column="0" selection-start="4353" selection-end="4353" vertical-scroll-proportion="-12.16">
               <folding />
             </state>
           </provider>
@@ -127,16 +129,7 @@
       <file leaf-file-name="cannon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/cannon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="15" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/scss/layout.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
+            <state line="8" column="12" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,22 +145,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/www/layout.css" />
-        <option value="$PROJECT_DIR$/www/css/index.css" />
-        <option value="$PROJECT_DIR$/www/js/lib/jquery.js" />
-        <option value="$PROJECT_DIR$/www/css/layout.css" />
         <option value="$PROJECT_DIR$/www/js/sprites/ball.js" />
         <option value="$PROJECT_DIR$/www/js/plugins/ball_sprite.js" />
-        <option value="$PROJECT_DIR$/www/js/plugins/vector2d.js" />
-        <option value="$PROJECT_DIR$/www/sand.html" />
         <option value="$PROJECT_DIR$/www/js/lib/helper.js" />
         <option value="$PROJECT_DIR$/www/scss/layout.scss" />
         <option value="$PROJECT_DIR$/www/js/game.js" />
-        <option value="$PROJECT_DIR$/www/sim.html" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/cannon.js" />
-        <option value="$PROJECT_DIR$/www/js/models/ball.js" />
         <option value="$PROJECT_DIR$/www/js/index.js" />
+        <option value="$PROJECT_DIR$/www/js/models/ball.js" />
+        <option value="$PROJECT_DIR$/www/sim.html" />
+        <option value="$PROJECT_DIR$/rectangle.js" />
+        <option value="$PROJECT_DIR$/www/sand.js" />
+        <option value="$PROJECT_DIR$/www/sand.html" />
+        <option value="$PROJECT_DIR$/www/js/plugins/vector2d.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/models/rectangle.js" />
+        <option value="$PROJECT_DIR$/www/js/sand.js" />
       </list>
     </option>
   </component>
@@ -313,16 +306,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Tests" />
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,12 +333,12 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -360,6 +353,8 @@
       <recent name="$PROJECT_DIR$/www/js/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/js" />
+      <recent name="$PROJECT_DIR$/www/js/models" />
       <recent name="$PROJECT_DIR$/www/img" />
       <recent name="$PROJECT_DIR$/www/css" />
     </key>
@@ -377,6 +372,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -407,19 +415,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -433,6 +428,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -454,13 +456,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -504,10 +499,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -589,28 +584,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/js/lib/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="93497" selection-start="93497" selection-end="93497" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1423" selection-end="1423" vertical-scroll-proportion="0.69177127" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="250" selection-end="250" vertical-scroll-proportion="0.35068494" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/plugins/ball_sprite.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="23" selection-start="666" selection-end="666" vertical-scroll-proportion="0.25430465">
-          <folding />
-        </state>
+        <state line="27" column="23" selection-start="666" selection-end="666" vertical-scroll-proportion="0.25430465" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/ECMAScript.js2">
@@ -627,25 +603,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/sand.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="9" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.78612715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="14" selection-start="119" selection-end="119" vertical-scroll-proportion="0.17534247">
-          <folding />
-        </state>
+        <state line="8" column="14" selection-start="119" selection-end="119" vertical-scroll-proportion="0.17534247" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/lib/helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.41643837">
-          <folding />
-        </state>
+        <state line="19" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.41643837" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/scss/layout.scss">
@@ -655,44 +620,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/plugins/vector2d.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1285" selection-end="1285" vertical-scroll-proportion="-16.16">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/cannon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="15" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/sim.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="-3.84">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+        <state line="8" column="12" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="33" selection-start="2902" selection-end="2902" vertical-scroll-proportion="0.3068493">
+        <state line="99" column="18" selection-start="3119" selection-end="3119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/sim.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="0" selection-start="4353" selection-end="4353" vertical-scroll-proportion="-12.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DropFruits/Resources/Capture.bundle/record_button.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/sand.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="25" selection-start="574" selection-end="574" vertical-scroll-proportion="0.45440957">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/plugins/vector2d.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="26" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1465" selection-end="1465" vertical-scroll-proportion="0.76878613">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="3" selection-start="927" selection-end="927" vertical-scroll-proportion="0.22328767">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/models/rectangle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/sand.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="14" selection-start="792" selection-end="792" vertical-scroll-proportion="0.75342464">
           <folding />
         </state>
       </provider>
