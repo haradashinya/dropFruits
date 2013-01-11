@@ -8,19 +8,19 @@
  * @constructor
  */
 
-window.Ball = function(){
+window.Ball = function(x,y){
+
   var canvas = document.querySelector("#test");
   var gravity = 0;
   var that = Object.create(new createjs.Shape());
+//  that.x = x;
+//  that.y = y;
   that.removeMe = false;
   that.type = "dynamic" ;
   that.graphics.beginFill("#ff0000");
   that.graphics.drawCircle(10,10,10);
   that.graphics.endFill();
   that.alpha = 1;
-  that.foo = function(){
-    console.log("foo");
-  };
 
   var length = function(){
     return Math.sqrt(that.vx * that.vx + that.vy * that.vy);

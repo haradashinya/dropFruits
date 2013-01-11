@@ -21,10 +21,7 @@ window.sand = function(){
     // otherwise we could use Ticker.addListener(stage);
     createjs.Ticker.setFPS(30);
     createjs.Ticker.addListener(window);
-
   };
-
-
   return that;
 };
 

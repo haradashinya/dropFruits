@@ -86,7 +86,7 @@ var app = {
       stage.onMouseDown = function(e){
         window.mx = e.stageX;
         window.my = e.stageY;
-        var ball =  window.Ball();
+        var ball =  window.Ball(25,canvas.height -25);
         // circleの位置を始点にする。
         ball.x = 25;
         ball.y = canvas.height - 25;
