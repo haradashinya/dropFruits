@@ -54,9 +54,10 @@ var app = {
       eye.graphics.drawCircle(10,canvas.height - 50,7);
       rec.alpha = 1;
 
-
       var enemy = Enemy(100,30);
-      console.log(enemy);
+      console.log(enemy.radius);
+      console.log(enemy.y);
+      console.log(enemy.x);
 
 
 
@@ -111,11 +112,12 @@ var app = {
           if (obj.removeMe === true){
             game.objects.splice(i,1);
             stage.removeChild(obj);
-
             return ;
           }
           obj.move(eye);
           eye.rotation = obj.angle/obj.length();
+          if (eye.x  )
+          console.log(obj.x);
 
         }
 

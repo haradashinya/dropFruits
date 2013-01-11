@@ -6,10 +6,10 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357893237865" ignored="false" />
     <file path="/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357636859616" ignored="false" />
-    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357893495944" ignored="false" />
+    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357893943609" ignored="false" />
     <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357725977549" ignored="false" />
     <file path="/game.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357734125918" ignored="false" />
-    <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357877105966" ignored="false" />
+    <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357894085496" ignored="false" />
     <file path="/vector2d.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357874253058" ignored="false" />
     <file path="/sand.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357870601475" ignored="false" />
     <file path="/cannon.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357797385226" ignored="false" />
@@ -19,7 +19,7 @@
     <file path="/rectangle.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357873663654" ignored="false" />
     <file path="/sand.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357892531962" ignored="false" />
     <file path="/rocket.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357891574023" ignored="false" />
-    <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357893509448" ignored="false" />
+    <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357893673070" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,19 +83,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rocket.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/rocket.js">
+      <file leaf-file-name="enemy.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/models/enemy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="1" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+            <state line="10" column="2" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enemy.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/js/models/enemy.js">
+      <file leaf-file-name="ball.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="1" selection-start="208" selection-end="208" vertical-scroll-proportion="0.15342465">
+            <state line="26" column="22" selection-start="565" selection-end="565" vertical-scroll-proportion="0.46027398">
               <folding />
             </state>
           </provider>
@@ -104,7 +104,7 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="0" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.0">
+            <state line="87" column="0" selection-start="2827" selection-end="2827" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,9 +133,9 @@
         <option value="$PROJECT_DIR$/www/js/rocket.js" />
         <option value="$PROJECT_DIR$/www/js/sand.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/js/models/ball.js" />
-        <option value="$PROJECT_DIR$/www/js/index.js" />
         <option value="$PROJECT_DIR$/www/js/models/enemy.js" />
+        <option value="$PROJECT_DIR$/www/js/index.js" />
+        <option value="$PROJECT_DIR$/www/js/models/ball.js" />
       </list>
     </option>
   </component>
@@ -606,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.24109589">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="31" selection-start="1007" selection-end="1007" vertical-scroll-proportion="0.5765896">
@@ -622,21 +615,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/rocket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="1" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.0">
+        <state line="5" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.10958904">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/models/enemy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="208" selection-end="208" vertical-scroll-proportion="0.15342465">
+        <state line="10" column="2" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="0" selection-start="2827" selection-end="2827" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="22" selection-start="565" selection-end="565" vertical-scroll-proportion="0.46027398">
           <folding />
         </state>
       </provider>
