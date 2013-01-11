@@ -56,8 +56,8 @@ var app = {
 
       window.enemies = [];
 //      var enemy = Enemy(100,30);
-      for(var i = 0;i < 3;++i){
-        var enemy = Enemy(100 + 100*i,30);
+      for(var i = 0;i < 5;++i){
+        var enemy = Enemy(70 + 70*i,30);
         enemies.push(enemy);
         stage.addChild(enemy);
       }
@@ -103,8 +103,8 @@ var app = {
       };
 
       var isCollid = function(ball,enemy){
-        var vec = Vec(0,0);
         if (!ball || !enemy) return;
+        var vec = Vec(0,0);
         vec.vx = enemy.x - ball.x;
         vec.vy = enemy.y - ball.y;
         var distance = vec.length();
@@ -134,10 +134,10 @@ var app = {
 
 
           if (enemies.length ===0) continue;
-          for  (var i = 0 ,l = enemies.length; i< l;i++){
-            var enemy = enemies[i];
+          for  (var i2 = 0 ,l2 = enemies.length; i2< l2;i2++){
+            var enemy = enemies[i2];
             if (isCollid(obj,enemy)){
-              enemies.splice(i,1);
+              enemies.splice(i2,1);
               stage.removeChild(enemy);
 
             };
