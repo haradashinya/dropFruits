@@ -54,10 +54,13 @@ var app = {
       eye.graphics.drawCircle(10,canvas.height - 50,7);
       rec.alpha = 1;
 
-      var enemy = Enemy(100,30);
-      console.log(enemy.radius);
-      console.log(enemy.y);
-      console.log(enemy.x);
+      window.enemies = [];
+//      var enemy = Enemy(100,30);
+      for(var i = 0;i < 3;++i){
+        var enemy = Enemy(100 + 100*i,30);
+        enemies.push(enemy);
+        stage.addChild(enemy);
+      }
 
 
 
@@ -82,7 +85,7 @@ var app = {
 
       // position the text on screen, relative to the stage coordinates:
       // fire tick method
-      createjs.Ticker.setFPS(30);
+      createjs.Ticker.setFPS(60);
       createjs.Ticker.useRAF = true;
       createjs.Ticker.addListener(stage);
 
@@ -101,6 +104,7 @@ var app = {
 
       var isCollid = function(ball,enemy){
         var vec = Vec(0,0);
+        if (!ball || !enemy) return;
         vec.vx = enemy.x - ball.x;
         vec.vy = enemy.y - ball.y;
         var distance = vec.length();
@@ -127,11 +131,18 @@ var app = {
             return ;
           }
           obj.move(eye);
-          eye.rotation = obj.angle/obj.length();
-         if (isCollid(obj,enemy) == true){
-           // if isCollid is True, then destroy enemy.
-           stage.removeChild(enemy);
-         }
+
+
+          if (enemies.length ===0) continue;
+          for  (var i = 0 ,l = enemies.length; i< l;i++){
+            var enemy = enemies[i];
+            if (isCollid(obj,enemy)){
+              enemies.splice(i,1);
+              stage.removeChild(enemy);
+
+            };
+          }
+
 
 
         }

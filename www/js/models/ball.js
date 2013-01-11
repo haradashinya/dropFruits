@@ -33,7 +33,13 @@ window.Ball = function(x,y){
     that.x += that.vx;
     that.vy += gravity;
     that.y += that.vy;
+    if (that.y < 0){
+      that.removeMe = true;
+    }
     if (that.y > canvas.height){
+      that.removeMe = true;
+    }
+    if (that.x > canvas.width){
       that.removeMe = true;
     }
   };
@@ -44,7 +50,7 @@ window.Ball = function(x,y){
   that.normalize();
   // vx,vyを3倍する。
   // scaleで玉の勢いを変更する
-  that.scale(40);
+  that.scale(30);
   return that;
 };
 
