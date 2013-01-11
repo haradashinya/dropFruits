@@ -99,6 +99,18 @@ var app = {
         stage.addChild(ball);
       };
 
+      var isCollid = function(ball,enemy){
+        var vec = Vec(0,0);
+        vec.vx = enemy.x - ball.x;
+        vec.vy = enemy.y - ball.y;
+        var distance = vec.length();
+        if (distance < (ball.radius + enemy.radius) ){
+          console.log("detect");
+          return true;
+        }
+        return false;
+
+      };
 
 
       // call update on the stage to make it render the current display list to the canvas:
@@ -107,7 +119,7 @@ var app = {
       var cnt =0;
       stage.tick = function(){
         for(var i= 0,l = game.objects.length; i < l;i++){
-          //obj is instance of Circle;
+          //obj is instance of Ball;
           var obj = game.objects[i];
           if (obj.removeMe === true){
             game.objects.splice(i,1);
@@ -116,10 +128,16 @@ var app = {
           }
           obj.move(eye);
           eye.rotation = obj.angle/obj.length();
-          if (eye.x  )
-          console.log(obj.x);
+         if (isCollid(obj,enemy) == true){
+           // if isCollid is True, then destroy enemy.
+           stage.removeChild(enemy);
+         }
+
 
         }
+
+
+
 
 
 

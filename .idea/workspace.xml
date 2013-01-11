@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357893237865" ignored="false" />
     <file path="/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357636859616" ignored="false" />
-    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357893943609" ignored="false" />
+    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357894966815" ignored="false" />
     <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357725977549" ignored="false" />
     <file path="/game.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357734125918" ignored="false" />
     <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357894085496" ignored="false" />
@@ -92,19 +92,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ball.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ball.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="22" selection-start="565" selection-end="565" vertical-scroll-proportion="0.46027398">
+            <state line="21" column="4" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="0" selection-start="2827" selection-end="2827" vertical-scroll-proportion="0.0">
+            <state line="131" column="53" selection-start="4101" selection-end="4101" vertical-scroll-proportion="0.8547945">
               <folding />
             </state>
           </provider>
@@ -134,8 +134,8 @@
         <option value="$PROJECT_DIR$/www/js/sand.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/models/enemy.js" />
-        <option value="$PROJECT_DIR$/www/js/index.js" />
         <option value="$PROJECT_DIR$/www/js/models/ball.js" />
+        <option value="$PROJECT_DIR$/www/js/index.js" />
       </list>
     </option>
   </component>
@@ -585,13 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/plugins/vector2d.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="5" selection-start="1177" selection-end="1177" vertical-scroll-proportion="0.32107496">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/sand.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="14" selection-start="498" selection-end="498" vertical-scroll-proportion="0.3468208">
@@ -620,6 +613,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/plugins/vector2d.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="7" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.62876713">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/models/enemy.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="2" selection-start="252" selection-end="252" vertical-scroll-proportion="0.0">
@@ -627,16 +627,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+    <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="2827" selection-end="2827" vertical-scroll-proportion="0.0">
+        <state line="21" column="4" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/models/ball.js">
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="565" selection-end="565" vertical-scroll-proportion="0.46027398">
+        <state line="131" column="53" selection-start="4101" selection-end="4101" vertical-scroll-proportion="0.8547945">
           <folding />
         </state>
       </provider>
