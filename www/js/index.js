@@ -33,16 +33,23 @@ var app = {
 
 
     },
-    receivedEvent: function(id) {
-      var canvas = document.getElementById("test");
-      // admobを使用するので、下半分にはる
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-      var ctx = canvas.getContext("2d");
-      stage = new createjs.Stage(canvas);
-      createjs.Touch.enable(stage);
-      stage.enableMouseOver(10);
-      var circle = new createjs.Shape();
+	receivedEvent: function(id) {
+		var canvas = document.getElementById("test");
+		var isIphone = true;
+		if (isIphone){
+			canvas.width = 320;
+			canvas.height = 480;
+		}else{
+			// admobを使用するので、下半分にはる
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+		}
+
+		var ctx = canvas.getContext("2d");
+		stage = new createjs.Stage(canvas);
+		createjs.Touch.enable(stage);
+		stage.enableMouseOver(10);
+		var circle = new createjs.Shape();
       var rec = new createjs.Shape( );
       rec.graphics.beginFill("red");
       rec.graphics.alpha = 0.1;
