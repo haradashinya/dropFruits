@@ -36,6 +36,7 @@ var app = {
     receivedEvent: function(id) {
       var canvas = document.getElementById("test");
       // admobを使用するので、下半分にはる
+      canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       var ctx = canvas.getContext("2d");
       stage = new createjs.Stage(canvas);
@@ -154,7 +155,7 @@ var app = {
             if (isCollid(obj,enemy)){
               game.enemies.splice(i2,1);
               stage.removeChild(enemy);
-            };
+            }
           }
         }
 
