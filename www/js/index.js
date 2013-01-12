@@ -53,15 +53,17 @@ var app = {
       eye.graphics.beginStroke("white");
       eye.graphics.drawCircle(10,canvas.height - 50,7);
       rec.alpha = 1;
+      var game = window.Game();
 
-      window.enemies = [];
+
+      game.enemies = [];
 //      var enemy = Enemy(100,30);
 
 
       var addEnemy = function(){
         for(var i = 0;i < 5;++i){
           var enemy = Enemy(canvas.width + 30 + 80*i,30);
-          enemies.push(enemy);
+          game.enemies.push(enemy);
           stage.addChild(enemy);
         }
       };
@@ -91,13 +93,13 @@ var app = {
       // position the text on screen, relative to the stage coordinates:
       // fire tick method
       createjs.Ticker.setFPS(60);
-      createjs.Ticker.useRAF = true;
+      createjs.Ticker.useRAF = false;
       createjs.Ticker.addListener(stage);
 
 
       stage.onMouseMove = function(e){
       };
-      var game = window.Game();
+
 
       stage.onMouseDown = function(e){
         window.mx = e.stageX;
@@ -127,9 +129,9 @@ var app = {
       stage.update();
       var cnt =0;
       stage.tick = function(){
-        enemies.forEach(function(enemy){
+        game.enemies.forEach(function(enemy){
           enemy.move();
-        });
+        },this);
 
 
 
@@ -144,13 +146,13 @@ var app = {
           }
           obj.move(eye);
 
-          if (enemies.length ===0) continue;
+          if (game.enemies.length ===0) continue;
           //ひとつのボールに対して、現在存在しているenemie全てに対して、どれかひとつ当たれば、そいつを消す。
           // あと、enemiyそれぞれを動かす。
-          for  (var i2 = 0 ,l2 = enemies.length; i2< l2;i2++){
-            var enemy = enemies[i2];
+          for  (var i2 = 0 ,l2 = game.enemies.length; i2< l2;i2++){
+            var enemy = game.enemies[i2];
             if (isCollid(obj,enemy)){
-              enemies.splice(i2,1);
+              game.enemies.splice(i2,1);
               stage.removeChild(enemy);
             };
           }

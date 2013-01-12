@@ -9,9 +9,14 @@
         <title>Hello World</title>
     </head>
     <body>
+        <audio controls id='bg-audio'>
+            <source src="audio/background.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
 
 
-		<canvas id="test" width="320" height="480" ></canvas>
+
+    <canvas id="test" width="320" height="480" ></canvas>
 
         <script type="text/javascript" src="cordova-2.2.0.js"></script>
         <script src="http://code.createjs.com/easeljs-0.5.0.min.js"></script>
@@ -35,6 +40,8 @@
             var speed = 0;
             var $back = document.querySelector("#back");
             var xPos = 0;
+            var audio = document.getElementById("bg-audio");
+			audio.play();
         </script>
 
     </body>

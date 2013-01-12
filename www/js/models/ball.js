@@ -50,7 +50,8 @@ window.Ball = function(x,y){
   that.normalize();
   // vx,vyを3倍する。
   // scaleで玉の勢いを変更する
-  that.scale(30);
+  var sh = window.innerHeight/17;
+  that.scale(sh);
   return that;
 };
 
