@@ -70,7 +70,8 @@ var app = {
 
       var addEnemy = function(){
         for(var i = 0;i < 5;++i){
-          var enemy = Enemy(canvas.width + 30 + 80*i,30);
+          var randY = Math.max(Math.floor(canvas.height * Math.random()) - 10,0);
+          var enemy = Enemy(canvas.width + 30 + 80*i,randY);
           game.enemies.push(enemy);
           stage.addChild(enemy);
         }
