@@ -144,49 +144,58 @@ var app = {
       // setup stage
       stage.update();
       var cnt =0;
-      stage.tick = function(){
-        for (var k = 0; k < game.enemies.length;k++){
-          var e = game.enemies[k];
-          e.move();
-          if (e.x < 0){
-            alert(e.x);
-            createjs.Ticker.removeListener(stage);
-            manager.showGameOver();
-          }
-          }
-        // if game.enemis doesn't exist , then add make more enemy
-        if (game.enemies.length === 0){
-          addEnemy();
+
+
+
+    var playingScene = function(){
+      if (game.enemies.length > 0){
+        var e = game.enemies[0];
+        e.move();
+        if (e.x < 15){
+          stage.tick = gameOverScene();
         }
+      }
 
+      // if game.enemis doesn't exist , then add make more enemy
+      if (game.enemies.length === 0){
+        addEnemy();
+      }
 
-
-
-        for(var i= 0,l = game.objects.length; i < l;i++){
-          //obj is instance of Ball;
-          var obj = game.objects[i];
-          if (obj.removeMe === true){
-            game.objects.splice(i,1);
-            stage.removeChild(obj);
-            return ;
-          }
-          obj.move(eye);
-          var e = game.enemies[0];
-          if (isCollid(obj,e)){
-            // init game.enemies.
-            game.enemies = [];
-            stage.removeChild(e);
-          }
+      for(var i= 0,l = game.objects.length; i < l;i++){
+        //obj is instance of Ball;
+        var obj = game.objects[i];
+        if (obj.removeMe === true){
+          game.objects.splice(i,1);
+          stage.removeChild(obj);
+          return ;
         }
+        obj.move(eye);
+        var e = game.enemies[0];
+        if (isCollid(obj,e)){
+          // init game.enemies.
+          game.enemies = [];
+          stage.removeChild(e);
+        }
+      }
+      stage.update();
+    };
+    var gameOverScene = function(){
+      game.state = "gameover";
+      game.enemies = [];
+      stage.removeChild(game.enemies[0]);
+      createjs.Ticker.removeListener(stage);
+      stage.onMouseDown = null;
+      manager.showGameOver();
+    };
+//      stage.tick = function(){
+//        if (game.state === "gameover"){
+//          return;
+//        }
+
+      stage.tick = playingScene;
 
 
 
-
-
-
-
-        stage.update();
-      };
 
 
 
