@@ -81,11 +81,6 @@ var app = {
         }
       };
       addEnemy();
-
-
-
-
-
       circle.graphics.beginFill("#ffcccc");
       circle.graphics.drawCircle(0,canvas.height - 25,50);
       circle.graphics.endFill();
@@ -120,6 +115,7 @@ var app = {
         vec.vy = enemy.y - ball.y;
         var distance = vec.length();
         if (distance < (ball.radius + enemy.radius) ){
+          enemy.removeMe = true;
           return true;
         }
         return false;
@@ -168,6 +164,7 @@ var app = {
         var e = game.enemies[0];
         if (isCollid(obj,e)){
           // init game.enemies.
+          window.e = e;
           game.enemies = [];
           stage.removeChild(e);
         }
@@ -182,6 +179,21 @@ var app = {
       stage.onMouseDown = null;
       manager.showGameOver();
     };
+
+    stage.init = function(){
+      console.log("called init");
+      game.objects.forEach(function(obj){
+        stage.removeChild(obj);
+      });
+      game.enemies.forEach(function(e){
+        console.log(e);
+        stage.removeChild(e);
+      });
+      stage.removeChild(window.e);
+
+    };
+
+
 
       stage.tick = playingScene;
     }

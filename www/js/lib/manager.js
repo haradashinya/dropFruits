@@ -32,11 +32,17 @@ window.Manager =function(canvas,stage){
   };
   // reset by reload browser.
   var handlePlayButtonPress = function(e){
-    location.reload();
+    stage.removeChild(playButtonText);
+    stage.removeChild(playButton);
+    stage.removeChild(gameOverText);
+//    location.reload();
+
+
   };
 
   var that = {
     showGameOver: function(){
+      console.log("called");
       addGameOverTitle();
       addPlayButton();
     }
