@@ -62,6 +62,7 @@ var app = {
       eye.graphics.drawCircle(10,canvas.height - 50,7);
       rec.alpha = 1;
       var game = window.Game();
+      game.state = "playing";
 
 
       game.enemies = [];
@@ -109,16 +110,17 @@ var app = {
       createjs.Ticker.addListener(stage);
 
 
-      stage.onMouseMove = function(e){
-      };
 
 
       stage.onMouseDown = function(e){
-        window.mx = e.stageX;
-        window.my = e.stageY;
-        var ball =  window.Ball(25,canvas.height -25);
-        game.objects.push(ball);
-        stage.addChild(ball);
+        if (game.state === "playing"){
+          window.mx = e.stageX;
+          window.my = e.stageY;
+          var ball =  window.Ball(25,canvas.height -25);
+          game.objects.push(ball);
+          stage.addChild(ball);
+        }
+
       };
 
       var sm = SoundManager();
@@ -137,6 +139,7 @@ var app = {
 
       };
 
+    window.manager = Manager(canvas,stage);
 
       // call update on the stage to make it render the current display list to the canvas:
       // setup stage
@@ -148,8 +151,10 @@ var app = {
           e.move();
           if (e.x - e.radius < 0){
             game.enemies.splice(k,1);
-            stage.removeChild(e);
-            console.log("game over");
+            // ゲームオーバーの処理
+//            stage.removeChild(e);
+            manager.showGameOver();
+            createjs.Ticker.removeListener(stage);
             break;
           }
         }

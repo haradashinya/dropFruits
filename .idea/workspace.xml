@@ -4,9 +4,9 @@
     <list default="true" id="d0a6015f-1a09-43af-b946-9cfd2b226c30" name="Default" comment="" />
     <ignored path="dropFruits.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213785004" ignored="false" />
+    <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358222779043" ignored="false" />
     <file path="/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357636859616" ignored="false" />
-    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358221100278" ignored="false" />
+    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358223089469" ignored="false" />
     <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213794379" ignored="false" />
     <file path="/game.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357734125918" ignored="false" />
     <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358214003208" ignored="false" />
@@ -19,8 +19,8 @@
     <file path="/rectangle.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357873663654" ignored="false" />
     <file path="/sand.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357892531962" ignored="false" />
     <file path="/rocket.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357891574023" ignored="false" />
-    <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358221284051" ignored="false" />
-    <file path="/manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357898741176" ignored="false" />
+    <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358222557871" ignored="false" />
+    <file path="/manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358223074991" ignored="false" />
     <file path="/sound_manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358212850774" ignored="false" />
     <file path="$PROJECT_DIR$/www/css/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213795742" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,7 +89,7 @@
       <file leaf-file-name="enemy.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/models/enemy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="53" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
+            <state line="17" column="0" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,25 +98,7 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="10" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.96438354">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="-7.96">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sound_manager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+            <state line="153" column="24" selection-start="4471" selection-end="4471" vertical-scroll-proportion="0.46027398">
               <folding />
             </state>
           </provider>
@@ -125,7 +107,7 @@
       <file leaf-file-name="manager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="1" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
+            <state line="11" column="21" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,14 +131,14 @@
         <option value="$PROJECT_DIR$/www/js/models/rectangle.js" />
         <option value="$PROJECT_DIR$/www/js/rocket.js" />
         <option value="$PROJECT_DIR$/www/js/sand.js" />
-        <option value="$PROJECT_DIR$/www/js/lib/manager.js" />
         <option value="$PROJECT_DIR$/www/js/lib/sound_manager.js" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/scss/layout.scss" />
         <option value="$PROJECT_DIR$/www/js/plugins/vector2d.js" />
         <option value="$PROJECT_DIR$/www/js/models/ball.js" />
-        <option value="$PROJECT_DIR$/www/js/index.js" />
         <option value="$PROJECT_DIR$/www/js/models/enemy.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/lib/manager.js" />
+        <option value="$PROJECT_DIR$/www/js/index.js" />
       </list>
     </option>
   </component>
@@ -275,28 +257,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="js">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="dropFruits">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="www">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="js">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="lib">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -664,37 +624,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="-7.96">
+        <state line="18" column="5" selection-start="339" selection-end="339" vertical-scroll-proportion="0.34246576">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/models/enemy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="53" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
+        <state line="17" column="0" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="39" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.5650289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="21" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="10" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.96438354">
+        <state line="153" column="24" selection-start="4471" selection-end="4471" vertical-scroll-proportion="0.46027398">
           <folding />
         </state>
       </provider>
