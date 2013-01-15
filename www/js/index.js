@@ -76,13 +76,13 @@ var app = {
       var currentSpeed = 1;
 	  var addEnemy = function(){
 		  currentSpeed += 0.2;
-		  for(var i = 0;i < 1;++i){
-			  var randY = Math.random() * 300 + 100;
-			  var enemy = Enemy(canvas.width + 30 + 80*i,randY);
+      var rands = [60,120,180,240,300];
+			  var randY = rands[Math.floor(Math.random() *  rands.length)];
+			  var enemy = Enemy(canvas.width + 30 + 80,randY);
+        enemy.x = canvas.width + 30 + 80;
 			  enemy.speed =currentSpeed;
 			  game.enemies.push(enemy);
 			  stage.addChild(enemy);
-		  }
       };
       addEnemy();
       circle.graphics.beginFill("#ffcccc");
@@ -95,8 +95,7 @@ var app = {
 
       // position the text on screen, relative to the stage coordinates:
       // fire tick method
-      createjs.Ticker.setFPS(60);
-      createjs.Ticker.useRAF = true;
+      createjs.Ticker.setFPS(30);
       createjs.Ticker.addListener(stage);
 
       stage.onMouseDown = function(e){
@@ -143,19 +142,22 @@ var app = {
 
 
     var playingScene = function(){
+      var e;
       if (game.enemies.length > 0){
-        var e = game.enemies[0];
-        if (e.x < 15){
+        e = game.enemies[0];
+        if (e.x < 16 && e.removeMe === false){
           stage.tick = gameOverScene;
+          game.enemies = [];
           stage.removeAllChildren();
         }else{
           e.move();
 
         }
-      }
-
-      // if game.enemis doesn't exist , then add make more enemy
-      if (game.enemies.length === 0){
+        if (e.removeMe === true){
+          stage.removeChild(e);
+          game.enemies = [];
+        }
+      }else{
         addEnemy();
       }
 
@@ -167,13 +169,13 @@ var app = {
           stage.removeChild(obj);
           return ;
         }
-        obj.move(eye);
-        var e = game.enemies[0];
+        obj.move();
+//        var e = game.enemies[0];
         if (isCollid(obj,e)){
           // init game.enemies.
-          window.e = e;
+          e.removeMe = true;
+          game.enemies = [];
           stage.removeChild(e);
-          game.enemies.pop();
         }
       }
       stage.update();

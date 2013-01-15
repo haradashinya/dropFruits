@@ -8,9 +8,8 @@ var Cannon = function(x,y,canvas){
     y: y,
     angle: 0,
     removeMe: false,
-    move:function(eye){
+    move:function(){
       angle = Math.atan2(my - that.y,mx - that.x);
-      eye.x -=1;
     },
     draw:function(){
     }

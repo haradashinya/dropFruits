@@ -4,12 +4,13 @@ window.Enemy = function(x,y){
   that.x = x;
   that.y = y;
   that.speed = 1;
+  that.removeMe = false;
   // inherit Vec
   Vec.apply(that,[x,y]);
 //  that.graphics.beginFill("black");
 //  that.graphics.drawCircle(0,0,that.radius);
   var colors = ["white","black","yellow","blue","#ffcccc"];
-//  var c = colors[1];
+  var c = colors[0];
   that.graphics.setStrokeStyle(5).beginFill("white").beginStroke("black").drawCircle(0,0,that.radius).endStroke();
   that.graphics.setStrokeStyle(3).beginFill("black").beginStroke("white").drawCircle(-10,-10,5).endStroke();
   that.graphics.setStrokeStyle(3).beginFill("black").beginStroke("white").drawCircle(10,-10,5).endStroke();
