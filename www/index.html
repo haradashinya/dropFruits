@@ -9,10 +9,7 @@
         <title>Hello World</title>
     </head>
     <body>
-        <audio controls id='bg-audio'>
-            <source src="audio/background.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <audio id="bg-audio" src='audio/background.mp3' preload='auto'>  </audio>
 
 
 
@@ -21,7 +18,10 @@
         <script type="text/javascript" src="cordova-2.2.0.js"></script>
         <script src="http://code.createjs.com/easeljs-0.5.0.min.js"></script>
 
-    <script src="js/lib/jquery.js"></script>
+        <script src="js/lib/jquery.js"></script>
+        <script src="js/lib/preloadjs-0.2.0.min.js"></script>
+        <script src="js/lib/soundjs-0.3.0.min.js"></script>
+
 
         <script src="js/lib/easeljs-0.5.0.min.js"></script>
 
@@ -33,6 +33,7 @@
         <script type="text/javascript" src="js/game.js"></script>
         <script src="js/cannon.js"></script>
         <script src="js/lib/helper.js"></script>
+        <script src='js/lib/sound_manager.js'></script>
         <script type="text/javascript" src="js/index.js"></script>
 
         <script type="text/javascript">

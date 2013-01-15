@@ -117,6 +117,8 @@ var app = {
         stage.addChild(ball);
       };
 
+      var sm = SoundManager();
+      sm.playBackground();
       var isCollid = function(ball,enemy){
         if (!ball || !enemy) return;
         var vec = Vec(0,0);
