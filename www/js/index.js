@@ -68,10 +68,14 @@ var app = {
 //      var enemy = Enemy(100,30);
 
 
+      var currentSpeed = 1;
       var addEnemy = function(){
+        currentSpeed += 0.2;
         for(var i = 0;i < 5;++i){
           var randY = Math.max(Math.floor(canvas.height * Math.random()) - 10,0);
           var enemy = Enemy(canvas.width + 30 + 80*i,randY);
+          enemy.speed =currentSpeed;
+
           game.enemies.push(enemy);
           stage.addChild(enemy);
         }
