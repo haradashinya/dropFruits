@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358222779043" ignored="false" />
     <file path="/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357636859616" ignored="false" />
-    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358232109229" ignored="false" />
+    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358232691983" ignored="false" />
     <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213794379" ignored="false" />
     <file path="/game.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357734125918" ignored="false" />
     <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358214003208" ignored="false" />
@@ -20,7 +20,7 @@
     <file path="/sand.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357892531962" ignored="false" />
     <file path="/rocket.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357891574023" ignored="false" />
     <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358225832141" ignored="false" />
-    <file path="/manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358231696429" ignored="false" />
+    <file path="/manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358232142572" ignored="false" />
     <file path="/sound_manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358212850774" ignored="false" />
     <file path="$PROJECT_DIR$/www/css/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213795742" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,7 +98,7 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="29" selection-start="5266" selection-end="5266" vertical-scroll-proportion="0.74520546">
+            <state line="37" column="4" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.48219177">
               <folding />
             </state>
           </provider>
@@ -107,7 +107,7 @@
       <file leaf-file-name="manager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="28" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+            <state line="46" column="9" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -643,14 +643,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+        <state line="46" column="9" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="29" selection-start="5266" selection-end="5266" vertical-scroll-proportion="0.74520546">
+        <state line="37" column="4" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.48219177">
           <folding />
         </state>
       </provider>

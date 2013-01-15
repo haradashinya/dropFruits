@@ -35,6 +35,7 @@ window.Manager =function(canvas,stage){
     stage.removeChild(playButtonText);
     stage.removeChild(playButton);
     stage.removeChild(gameOverText);
+    stage.init();
 //    location.reload();
 
 
@@ -42,7 +43,6 @@ window.Manager =function(canvas,stage){
 
   var that = {
     showGameOver: function(){
-      console.log("called");
       addGameOverTitle();
       addPlayButton();
     }

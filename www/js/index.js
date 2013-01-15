@@ -35,6 +35,10 @@ var app = {
     },
 	receivedEvent: function(id) {
 		var canvas = document.getElementById("test");
+    var ctx = canvas.getContext("2d");
+
+
+
 		var isIphone = true;
 		if (isIphone){
 			canvas.width = 320;
@@ -45,7 +49,7 @@ var app = {
 			canvas.height = window.innerHeight;
 		}
 
-		var ctx = canvas.getContext("2d");
+
 		stage = new createjs.Stage(canvas);
 		createjs.Touch.enable(stage);
 		stage.enableMouseOver(10);
@@ -171,26 +175,20 @@ var app = {
       }
       stage.update();
     };
+
+
+
     var gameOverScene = function(){
       game.state = "gameover";
       game.enemies = [];
       stage.removeChild(game.enemies[0]);
-      createjs.Ticker.removeListener(stage);
       stage.onMouseDown = null;
       manager.showGameOver();
+      stage.update();
     };
 
     stage.init = function(){
-      console.log("called init");
-      game.objects.forEach(function(obj){
-        stage.removeChild(obj);
-      });
-      game.enemies.forEach(function(e){
-        console.log(e);
-        stage.removeChild(e);
-      });
-      stage.removeChild(window.e);
-
+      location.reload();
     };
 
 
