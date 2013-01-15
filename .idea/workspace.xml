@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213785004" ignored="false" />
     <file path="/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357636859616" ignored="false" />
-    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358216488708" ignored="false" />
+    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358221100278" ignored="false" />
     <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213794379" ignored="false" />
     <file path="/game.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357734125918" ignored="false" />
     <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358214003208" ignored="false" />
@@ -19,7 +19,7 @@
     <file path="/rectangle.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357873663654" ignored="false" />
     <file path="/sand.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357892531962" ignored="false" />
     <file path="/rocket.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357891574023" ignored="false" />
-    <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358216405704" ignored="false" />
+    <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358221284051" ignored="false" />
     <file path="/manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357898741176" ignored="false" />
     <file path="/sound_manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358212850774" ignored="false" />
     <file path="$PROJECT_DIR$/www/css/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213795742" ignored="false" />
@@ -89,7 +89,7 @@
       <file leaf-file-name="enemy.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/models/enemy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="15" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
+            <state line="15" column="53" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,7 +98,16 @@
       <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="30" selection-start="2178" selection-end="2179" vertical-scroll-proportion="0.39452055">
+            <state line="63" column="10" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.96438354">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="-7.96">
               <folding />
             </state>
           </provider>
@@ -146,14 +155,14 @@
         <option value="$PROJECT_DIR$/www/scss/layout.scss" />
         <option value="$PROJECT_DIR$/www/js/plugins/vector2d.js" />
         <option value="$PROJECT_DIR$/www/js/models/ball.js" />
-        <option value="$PROJECT_DIR$/www/js/models/enemy.js" />
         <option value="$PROJECT_DIR$/www/js/index.js" />
+        <option value="$PROJECT_DIR$/www/js/models/enemy.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="729" />
+    <option name="x" value="663" />
     <option name="y" value="22" />
     <option name="width" value="1113" />
     <option name="height" value="878" />
@@ -502,7 +511,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="729" y="22" width="1113" height="878" extended-state="0" />
+    <frame x="663" y="22" width="1113" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -634,23 +643,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/plugins/vector2d.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="20" selection-start="317" selection-end="317" vertical-scroll-proportion="0.31683168">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -669,23 +664,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="1" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="56" selection-start="722" selection-end="722" vertical-scroll-proportion="0.25433525">
+        <state line="19" column="0" selection-start="724" selection-end="724" vertical-scroll-proportion="-7.96">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/models/enemy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="15" selection-start="411" selection-end="411" vertical-scroll-proportion="0.0">
+        <state line="15" column="53" selection-start="778" selection-end="778" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="30" selection-start="2178" selection-end="2179" vertical-scroll-proportion="0.39452055">
+        <state line="63" column="10" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.96438354">
           <folding />
         </state>
       </provider>

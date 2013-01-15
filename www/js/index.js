@@ -75,7 +75,6 @@ var app = {
           var randY = Math.max(Math.floor(canvas.height * Math.random()) - 10,0);
           var enemy = Enemy(canvas.width + 30 + 80*i,randY);
           enemy.speed =currentSpeed;
-
           game.enemies.push(enemy);
           stage.addChild(enemy);
         }
@@ -147,9 +146,11 @@ var app = {
         for (var k = 0; k < game.enemies.length;k++){
           var e = game.enemies[k];
           e.move();
-          if (e.x + e.radius < 0){
+          if (e.x - e.radius < 0){
             game.enemies.splice(k,1);
             stage.removeChild(e);
+            console.log("game over");
+            break;
           }
         }
         // if game.enemis doesn't exist , then add make more enemy
