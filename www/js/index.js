@@ -74,15 +74,15 @@ var app = {
 
 
       var currentSpeed = 1;
-      var addEnemy = function(){
-        currentSpeed += 0.2;
-        for(var i = 0;i < 1;++i){
-          var randY = Math.max(Math.floor(canvas.height * Math.random()) - 10,0);
-          var enemy = Enemy(canvas.width + 30 + 80*i,randY);
-          enemy.speed =currentSpeed;
-          game.enemies.push(enemy);
-          stage.addChild(enemy);
-        }
+	  var addEnemy = function(){
+		  currentSpeed += 0.2;
+		  for(var i = 0;i < 1;++i){
+			  var randY = Math.random() * 300 + 100;
+			  var enemy = Enemy(canvas.width + 30 + 80*i,randY);
+			  enemy.speed =currentSpeed;
+			  game.enemies.push(enemy);
+			  stage.addChild(enemy);
+		  }
       };
       addEnemy();
       circle.graphics.beginFill("#ffcccc");
@@ -95,7 +95,7 @@ var app = {
 
       // position the text on screen, relative to the stage coordinates:
       // fire tick method
-      createjs.Ticker.setFPS(50);
+      createjs.Ticker.setFPS(60);
       createjs.Ticker.useRAF = true;
       createjs.Ticker.addListener(stage);
 
