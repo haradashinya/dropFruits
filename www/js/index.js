@@ -148,7 +148,8 @@ var app = {
         for (var k = 0; k < game.enemies.length;k++){
           var e = game.enemies[k];
           e.move();
-          if (e.x - e.radius < 0){
+          if (e.x < 0){
+            alert(e.x);
             createjs.Ticker.removeListener(stage);
             manager.showGameOver();
           }
@@ -170,11 +171,10 @@ var app = {
             return ;
           }
           obj.move(eye);
-          //ひとつのボールに対して、現在存在しているenemie全てに対して、どれかひとつ当たれば、そいつを消す。
-          // あと、enemiyそれぞれを動かす。
           var e = game.enemies[0];
           if (isCollid(obj,e)){
-            game.enemies.splice(0,1);
+            // init game.enemies.
+            game.enemies = [];
             stage.removeChild(e);
           }
         }
