@@ -94,13 +94,9 @@ var app = {
       stage.addChild(rec);
       stage.addChild(eye);
 
-
-
-
-
       // position the text on screen, relative to the stage coordinates:
       // fire tick method
-      createjs.Ticker.setFPS(60);
+      createjs.Ticker.setFPS(50);
       createjs.Ticker.useRAF = false;
       createjs.Ticker.addListener(stage);
 
@@ -124,7 +120,6 @@ var app = {
         vec.vy = enemy.y - ball.y;
         var distance = vec.length();
         if (distance < (ball.radius + enemy.radius) ){
-          console.log("detect");
           return true;
         }
         return false;
@@ -152,7 +147,7 @@ var app = {
         var e = game.enemies[0];
         e.move();
         if (e.x < 15){
-          stage.tick = gameOverScene();
+          stage.tick = gameOverScene;
         }
       }
 
@@ -187,39 +182,8 @@ var app = {
       stage.onMouseDown = null;
       manager.showGameOver();
     };
-//      stage.tick = function(){
-//        if (game.state === "gameover"){
-//          return;
-//        }
 
       stage.tick = playingScene;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 };
