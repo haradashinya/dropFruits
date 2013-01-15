@@ -139,9 +139,18 @@ var app = {
       stage.update();
       var cnt =0;
       stage.tick = function(){
-        game.enemies.forEach(function(enemy){
-          enemy.move();
-        },this);
+        for (var k = 0; k < game.enemies.length;k++){
+          var e = game.enemies[k];
+          e.move();
+          if (e.x + e.radius < 0){
+            game.enemies.splice(k,1);
+            stage.removeChild(e);
+          }
+        }
+        // if game.enemis doesn't exist , then add make more enemy
+        if (game.enemies.length === 0){
+          addEnemy();
+        }
 
 
 
@@ -156,7 +165,6 @@ var app = {
           }
           obj.move(eye);
 
-          if (game.enemies.length ===0) continue;
           //ひとつのボールに対して、現在存在しているenemie全てに対して、どれかひとつ当たれば、そいつを消す。
           // あと、enemiyそれぞれを動かす。
           for  (var i2 = 0 ,l2 = game.enemies.length; i2< l2;i2++){
@@ -166,6 +174,7 @@ var app = {
               stage.removeChild(enemy);
             }
           }
+
         }
 
 
