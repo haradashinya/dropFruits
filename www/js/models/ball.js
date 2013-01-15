@@ -51,7 +51,9 @@ window.Ball = function(x,y){
   // vx,vyを3倍する。
   // scaleで玉の勢いを変更する
   var sh =canvas.height/17;
+  that.vx *= 0.8;
   that.scale(sh);
+
   return that;
 };
 
