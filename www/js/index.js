@@ -96,7 +96,7 @@ var app = {
       // position the text on screen, relative to the stage coordinates:
       // fire tick method
       createjs.Ticker.setFPS(50);
-      createjs.Ticker.useRAF = false;
+      createjs.Ticker.useRAF = true;
       createjs.Ticker.addListener(stage);
 
       stage.onMouseDown = function(e){
@@ -113,7 +113,7 @@ var app = {
       var sm = SoundManager();
       sm.playBackground();
       var isCollid = function(ball,enemy){
-        if (!ball || !enemy) return;
+        if (!ball || !enemy) return false;
         var vec = Vec(0,0);
         vec.vx = enemy.x - ball.x;
         vec.vy = enemy.y - ball.y;
@@ -145,9 +145,12 @@ var app = {
     var playingScene = function(){
       if (game.enemies.length > 0){
         var e = game.enemies[0];
-        e.move();
         if (e.x < 15){
           stage.tick = gameOverScene;
+          stage.removeAllChildren();
+        }else{
+          e.move();
+
         }
       }
 
@@ -169,8 +172,8 @@ var app = {
         if (isCollid(obj,e)){
           // init game.enemies.
           window.e = e;
-          game.enemies = [];
           stage.removeChild(e);
+          game.enemies.pop();
         }
       }
       stage.update();
@@ -180,8 +183,8 @@ var app = {
 
     var gameOverScene = function(){
       game.state = "gameover";
-      game.enemies = [];
       stage.removeChild(game.enemies[0]);
+      game.enemies = [];
       stage.onMouseDown = null;
       manager.showGameOver();
       stage.update();
