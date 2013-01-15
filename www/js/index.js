@@ -72,7 +72,7 @@ var app = {
       var currentSpeed = 1;
       var addEnemy = function(){
         currentSpeed += 0.2;
-        for(var i = 0;i < 5;++i){
+        for(var i = 0;i < 1;++i){
           var randY = Math.max(Math.floor(canvas.height * Math.random()) - 10,0);
           var enemy = Enemy(canvas.width + 30 + 80*i,randY);
           enemy.speed =currentSpeed;
@@ -87,11 +87,6 @@ var app = {
 
 
       circle.graphics.beginFill("#ffcccc");
-//      circle.graphics.setStrokeStyle(10);
-//      circle.graphics.beginStroke("#ccc");
-      //円を描画
-      // circleの中心点 50,420
-      // drawCircle(originX,originY,radius);
       circle.graphics.drawCircle(0,canvas.height - 25,50);
       circle.graphics.endFill();
       //shapeを表示
@@ -108,9 +103,6 @@ var app = {
       createjs.Ticker.setFPS(60);
       createjs.Ticker.useRAF = false;
       createjs.Ticker.addListener(stage);
-
-
-
 
       stage.onMouseDown = function(e){
         if (game.state === "playing"){
@@ -141,6 +133,13 @@ var app = {
 
     window.manager = Manager(canvas,stage);
 
+    var reset = function(){
+      currentSpeed = 1;
+
+    };
+
+
+
       // call update on the stage to make it render the current display list to the canvas:
       // setup stage
       stage.update();
@@ -150,14 +149,10 @@ var app = {
           var e = game.enemies[k];
           e.move();
           if (e.x - e.radius < 0){
-            game.enemies.splice(k,1);
-            // ゲームオーバーの処理
-//            stage.removeChild(e);
-            manager.showGameOver();
             createjs.Ticker.removeListener(stage);
-            break;
+            manager.showGameOver();
           }
-        }
+          }
         // if game.enemis doesn't exist , then add make more enemy
         if (game.enemies.length === 0){
           addEnemy();
@@ -175,17 +170,13 @@ var app = {
             return ;
           }
           obj.move(eye);
-
           //ひとつのボールに対して、現在存在しているenemie全てに対して、どれかひとつ当たれば、そいつを消す。
           // あと、enemiyそれぞれを動かす。
-          for  (var i2 = 0 ,l2 = game.enemies.length; i2< l2;i2++){
-            var enemy = game.enemies[i2];
-            if (isCollid(obj,enemy)){
-              game.enemies.splice(i2,1);
-              stage.removeChild(enemy);
-            }
+          var e = game.enemies[0];
+          if (isCollid(obj,e)){
+            game.enemies.splice(0,1);
+            stage.removeChild(e);
           }
-
         }
 
 

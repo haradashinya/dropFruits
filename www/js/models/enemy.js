@@ -9,8 +9,8 @@ window.Enemy = function(x,y){
 //  that.graphics.beginFill("black");
 //  that.graphics.drawCircle(0,0,that.radius);
   var colors = ["white","black","yellow","blue","#ffcccc"];
-  var c = colors[Math.floor(Math.random() * colors.length - 0.1) ];
-  that.graphics.setStrokeStyle(5).beginFill(c).beginStroke("black").drawCircle(0,0,that.radius).endStroke();
+//  var c = colors[1];
+  that.graphics.setStrokeStyle(5).beginFill("white").beginStroke("black").drawCircle(0,0,that.radius).endStroke();
   that.graphics.setStrokeStyle(3).beginFill("black").beginStroke("white").drawCircle(-10,-10,5).endStroke();
   that.graphics.setStrokeStyle(3).beginFill("black").beginStroke("white").drawCircle(10,-10,5).endStroke();
   that.graphics.beginFill("red").drawCircle(0,15,10);
@@ -25,6 +25,10 @@ window.Enemy = function(x,y){
     // 正規化して、力を一定にする。
     that.normalize();
     that.x +=  -that.speed;
+  };
+  that.stop = function(){
+    that.normalize();
+    that.vx = 0;
   };
   return that;
 };
