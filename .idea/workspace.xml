@@ -4,10 +4,10 @@
     <list default="true" id="d0a6015f-1a09-43af-b946-9cfd2b226c30" name="Default" comment="" />
     <ignored path="dropFruits.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358212940825" ignored="false" />
+    <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213785004" ignored="false" />
     <file path="/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357636859616" ignored="false" />
     <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358212866792" ignored="false" />
-    <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357725977549" ignored="false" />
+    <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213794379" ignored="false" />
     <file path="/game.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357734125918" ignored="false" />
     <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357896971202" ignored="false" />
     <file path="/vector2d.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357874253058" ignored="false" />
@@ -22,6 +22,7 @@
     <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357898407064" ignored="false" />
     <file path="/manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357898741176" ignored="false" />
     <file path="/sound_manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358212850774" ignored="false" />
+    <file path="$PROJECT_DIR$/www/css/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213795742" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +41,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -94,10 +95,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="763" selection-end="763" vertical-scroll-proportion="0.41618496">
+            <state line="11" column="13" selection-start="560" selection-end="560" vertical-scroll-proportion="-2.56">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/scss/layout.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.27671233">
               <folding />
             </state>
           </provider>
@@ -124,7 +134,7 @@
       <file leaf-file-name="sound_manager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="24" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
+            <state line="32" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/www/js/game.js" />
         <option value="$PROJECT_DIR$/www/js/cannon.js" />
         <option value="$PROJECT_DIR$/www/sim.html" />
         <option value="$PROJECT_DIR$/rectangle.js" />
@@ -162,9 +171,10 @@
         <option value="$PROJECT_DIR$/www/js/models/ball.js" />
         <option value="$PROJECT_DIR$/www/js/models/enemy.js" />
         <option value="$PROJECT_DIR$/www/js/lib/manager.js" />
-        <option value="$PROJECT_DIR$/www/js/lib/sound_manager.js" />
         <option value="$PROJECT_DIR$/www/js/index.js" />
+        <option value="$PROJECT_DIR$/www/js/lib/sound_manager.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/scss/layout.scss" />
       </list>
     </option>
   </component>
@@ -329,7 +339,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -340,6 +349,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,12 +367,12 @@
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -399,19 +409,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -440,6 +437,19 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -453,13 +463,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -481,6 +484,13 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -524,10 +534,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -535,11 +545,11 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2492971" sideWeight="0.32717678" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2492971" sideWeight="0.33377308" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2492971" sideWeight="0.6635884" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2492971" sideWeight="0.6569921" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -609,11 +619,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/scss/layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DropFruits/Resources/Capture.bundle/record_button.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -656,9 +661,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/lib/soundjs-0.3.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="267" selection-end="267" vertical-scroll-proportion="0.20083682">
-          <folding />
-        </state>
+        <state line="9" column="32" selection-start="267" selection-end="267" vertical-scroll-proportion="0.20083682" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
@@ -677,7 +680,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="24" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
+        <state line="32" column="0" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -698,7 +701,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="763" selection-end="763" vertical-scroll-proportion="0.41618496">
+        <state line="11" column="13" selection-start="560" selection-end="560" vertical-scroll-proportion="-2.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/scss/layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="0.27671233">
           <folding />
         </state>
       </provider>

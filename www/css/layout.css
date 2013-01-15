@@ -6,6 +6,9 @@ body {
   margin: 0px;
   border: 1px solid; }
 
+#hidden {
+  display: none; }
+
 .layer {
   position: absolute;
   width: 480px;
