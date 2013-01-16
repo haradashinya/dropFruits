@@ -21,7 +21,7 @@
     <file path="/rocket.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357891574023" ignored="false" />
     <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358319232535" ignored="false" />
     <file path="/manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358232142572" ignored="false" />
-    <file path="/sound_manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358345272249" ignored="false" />
+    <file path="/sound_manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358349680714" ignored="false" />
     <file path="$PROJECT_DIR$/www/css/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213795742" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,19 +104,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="28" selection-start="3421" selection-end="3421" vertical-scroll-proportion="0.0">
+            <state line="45" column="7" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.2630137">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sound_manager.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sound_manager.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="31" selection-start="972" selection-end="972" vertical-scroll-proportion="0.66945606">
+            <state line="37" column="31" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -658,16 +658,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+    <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="28" selection-start="3421" selection-end="3421" vertical-scroll-proportion="0.0">
+        <state line="37" column="31" selection-start="994" selection-end="994" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="31" selection-start="972" selection-end="972" vertical-scroll-proportion="0.66945606">
+        <state line="45" column="7" selection-start="1460" selection-end="1460" vertical-scroll-proportion="0.2630137">
           <folding />
         </state>
       </provider>

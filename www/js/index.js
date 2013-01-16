@@ -96,7 +96,7 @@ var app = {
 
       // position the text on screen, relative to the stage coordinates:
       // fire tick method
-      createjs.Ticker.setFPS(60);
+      createjs.Ticker.setFPS(50);
       createjs.Ticker.addListener(stage);
 
       stage.onMouseDown = function(e){
@@ -107,6 +107,11 @@ var app = {
           game.objects.push(ball);
           stage.addChild(ball);
           sm.playShotSound();
+
+
+
+
+
 //          var audio = document.getElementById("shot-audio");
 //          audio.load();
 //          audio.play();

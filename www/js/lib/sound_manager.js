@@ -6,6 +6,7 @@ var SoundManager = function(){
     {src:assetPath + "/background.mp3",id:"bg-audio"},
     {src:assetPath + "/shot.mp3",id:"shot-audio"}
   ];
+  shotAudio = document.getElementById("shot-audio");
 
 
 
@@ -30,9 +31,7 @@ var SoundManager = function(){
 
   var that = {
     handleLoadComplete:function(){
-      console.log('called ');
       instance = createjs.SoundJS.play("music");
-
       console.log(instance);
     },
     handleProgress:function(){
@@ -43,9 +42,6 @@ var SoundManager = function(){
 //      var instance = createjs.SoundJS.play("bg-audio",createjs.SoundJS.INTERRUPT_NONE,0,0,false,1);
     },
     playShotSound:function(){
-      var audio = document.getElementById("shot-audio");
-      audio.load();
-      audio.play();
     }
 
   };
