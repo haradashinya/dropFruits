@@ -36,6 +36,7 @@ var app = {
 	receivedEvent: function(id) {
 		var canvas = document.getElementById("test");
     var ctx = canvas.getContext("2d");
+    var sm = SoundManager();
 
 
 
@@ -105,13 +106,17 @@ var app = {
           var ball =  window.Ball(25,canvas.height -25);
           game.objects.push(ball);
           stage.addChild(ball);
+          sm.playShotSound();
+//          var audio = document.getElementById("shot-audio");
+//          audio.load();
+//          audio.play();
         }
 
       };
 
 
 
-      var sm = SoundManager();
+
       sm.playBackground();
       var isCollid = function(ball,enemy){
         if (!ball || !enemy) return false;

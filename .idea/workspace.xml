@@ -4,9 +4,9 @@
     <list default="true" id="d0a6015f-1a09-43af-b946-9cfd2b226c30" name="Default" comment="" />
     <ignored path="dropFruits.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358222779043" ignored="false" />
+    <file path="/index.html" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358344102958" ignored="false" />
     <file path="/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357636859616" ignored="false" />
-    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358328850401" ignored="false" />
+    <file path="/index.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358345188154" ignored="false" />
     <file path="/layout.scss" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213794379" ignored="false" />
     <file path="/game.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357734125918" ignored="false" />
     <file path="/ball.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358214003208" ignored="false" />
@@ -21,7 +21,7 @@
     <file path="/rocket.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1357891574023" ignored="false" />
     <file path="/enemy.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358319232535" ignored="false" />
     <file path="/manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358232142572" ignored="false" />
-    <file path="/sound_manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358212850774" ignored="false" />
+    <file path="/sound_manager.js" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358345272249" ignored="false" />
     <file path="$PROJECT_DIR$/www/css/layout.css" changelist="d0a6015f-1a09-43af-b946-9cfd2b226c30" time="1358213795742" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,34 +98,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
+            <state line="12" column="65" selection-start="634" selection-end="634" vertical-scroll-proportion="-3.2">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="19" selection-start="4039" selection-end="4039" vertical-scroll-proportion="0.35068494">
+            <state line="108" column="28" selection-start="3421" selection-end="3421" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cannon.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/cannon.js">
+      <file leaf-file-name="sound_manager.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="5" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="4" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.0">
+            <state line="38" column="31" selection-start="972" selection-end="972" vertical-scroll-proportion="0.66945606">
               <folding />
             </state>
           </provider>
@@ -148,15 +139,15 @@
         <option value="$PROJECT_DIR$/www/js/models/rectangle.js" />
         <option value="$PROJECT_DIR$/www/js/rocket.js" />
         <option value="$PROJECT_DIR$/www/js/sand.js" />
-        <option value="$PROJECT_DIR$/www/js/lib/sound_manager.js" />
         <option value="$PROJECT_DIR$/www/scss/layout.scss" />
         <option value="$PROJECT_DIR$/www/js/plugins/vector2d.js" />
         <option value="$PROJECT_DIR$/www/js/models/ball.js" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/lib/manager.js" />
         <option value="$PROJECT_DIR$/www/js/cannon.js" />
         <option value="$PROJECT_DIR$/www/js/models/enemy.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/index.js" />
+        <option value="$PROJECT_DIR$/www/js/lib/sound_manager.js" />
       </list>
     </option>
   </component>
@@ -348,11 +339,11 @@
       <recent name="$PROJECT_DIR$/www/js/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/www/audio" />
       <recent name="$PROJECT_DIR$/www/js/lib" />
       <recent name="$PROJECT_DIR$/www/js" />
       <recent name="$PROJECT_DIR$/www/js/models" />
       <recent name="$PROJECT_DIR$/www/img" />
-      <recent name="$PROJECT_DIR$/www/css" />
     </key>
   </component>
   <component name="RunManager">
@@ -574,7 +565,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/www/js/index.js</url>
+          <line>89</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -632,21 +630,16 @@
         <state line="25" column="16" selection-start="249" selection-end="249" vertical-scroll-proportion="0.539726" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="339" selection-end="339" vertical-scroll-proportion="0.34246576" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/lib/manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="4" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.0">
+        <state line="1" column="4" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/cannon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+        <state line="13" column="4" selection-start="269" selection-end="269" vertical-scroll-proportion="0.2849315">
           <folding />
         </state>
       </provider>
@@ -660,14 +653,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="663" selection-end="663" vertical-scroll-proportion="0.0">
+        <state line="12" column="65" selection-start="634" selection-end="634" vertical-scroll-proportion="-3.2">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="19" selection-start="4039" selection-end="4039" vertical-scroll-proportion="0.35068494">
+        <state line="108" column="28" selection-start="3421" selection-end="3421" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/lib/sound_manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="31" selection-start="972" selection-end="972" vertical-scroll-proportion="0.66945606">
           <folding />
         </state>
       </provider>
