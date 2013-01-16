@@ -95,7 +95,7 @@ var app = {
 
       // position the text on screen, relative to the stage coordinates:
       // fire tick method
-      createjs.Ticker.setFPS(30);
+      createjs.Ticker.setFPS(60);
       createjs.Ticker.addListener(stage);
 
       stage.onMouseDown = function(e){
@@ -108,6 +108,8 @@ var app = {
         }
 
       };
+
+
 
       var sm = SoundManager();
       sm.playBackground();
@@ -142,9 +144,10 @@ var app = {
 
 
     var playingScene = function(){
-      var e;
-      if (game.enemies.length > 0){
-        e = game.enemies[0];
+      var e = game.enemies[0];
+      if (e === undefined){
+        return addEnemy();
+      }else{
         if (e.x < 16 && e.removeMe === false){
           stage.tick = gameOverScene;
           game.enemies = [];
@@ -157,8 +160,6 @@ var app = {
           stage.removeChild(e);
           game.enemies = [];
         }
-      }else{
-        addEnemy();
       }
 
       for(var i= 0,l = game.objects.length; i < l;i++){
@@ -184,6 +185,7 @@ var app = {
 
 
     var gameOverScene = function(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
       game.state = "gameover";
       stage.removeChild(game.enemies[0]);
       game.enemies = [];
@@ -196,9 +198,8 @@ var app = {
       location.reload();
     };
 
-
-
       stage.tick = playingScene;
+
     }
 
 };

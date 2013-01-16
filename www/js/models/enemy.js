@@ -10,8 +10,8 @@ window.Enemy = function(x,y){
 //  that.graphics.beginFill("black");
 //  that.graphics.drawCircle(0,0,that.radius);
   var colors = ["white","black","yellow","blue","#ffcccc"];
-  var c = colors[0];
-  that.graphics.setStrokeStyle(5).beginFill("white").beginStroke("black").drawCircle(0,0,that.radius).endStroke();
+  var c = colors[Math.floor(Math.random() * colors.length)];
+  that.graphics.setStrokeStyle(5).beginFill(c).beginStroke("black").drawCircle(0,0,that.radius).endStroke();
   that.graphics.setStrokeStyle(3).beginFill("black").beginStroke("white").drawCircle(-10,-10,5).endStroke();
   that.graphics.setStrokeStyle(3).beginFill("black").beginStroke("white").drawCircle(10,-10,5).endStroke();
   that.graphics.beginFill("red").drawCircle(0,15,10);
