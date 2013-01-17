@@ -56,6 +56,8 @@
 {
     NSURL* url = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
     NSString* invokeString = nil;
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"WebKitStoreWebDataForBackup"];
+
 
     if (url && [url isKindOfClass:[NSURL class]]) {
         invokeString = [url absoluteString];
